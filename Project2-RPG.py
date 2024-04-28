@@ -5,11 +5,12 @@ Github link: https://github.com/aflemi6/CPSC1050-Project-2-RPG/tree/main
 This program is a game where you go around a map collecting items and fighting enemies. You win by
 defeating all the enemies and lose when you die. The game is mostly luck as your damage multiples significantly.
 As well as the damage you receive.
-You can also choose the size of your adventure and get an output text file of your attempt.
+You can also choose the size of your adventure and get an output text file of your attempt. "p" is the player.
+Lowercase items are items. Uppercase "E" are enemies. Try to defeat them all!
 """
 """
 The MiniMap class takes in a side length and creates a square 2D list of the same size. It creates a row for
-the side length and adds an element for each column. The prinr_map function takes the created map and prints
+the side length and adds an element for each column. The print_map function takes the created map and prints
 it out formatted. It checks for what is in the list and outputs without the players movements. Output_map_list adds the map
 elements to strings in a list with the players movements This list is then returned.
 """
@@ -169,7 +170,7 @@ class Player(MapIcon):
     def change_stats(self):
         if 'health' in player['player'][1] and not self.health_up:
             self.health += 100 
-            print('Your health increased!\nYour max health is now 100.')
+            print('Your health increased!\nYour max health is now 200.')
             self.health_up = True
         if 'armor' in player['player'][1] and not self.armor:
             self.defense = 10
