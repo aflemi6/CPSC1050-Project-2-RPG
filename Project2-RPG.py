@@ -1,6 +1,7 @@
 import random
 """
 CODE DESCRIPTION:
+Github link: https://github.com/aflemi6/CPSC1050-Project-2-RPG/tree/main
 This program is a game where you go around a map collecting items and fighting enemies. You win by
 defeating all the enemies and lose when you die. The game is mostly luck as your damage multiples significantly.
 As well as the damage you receive.
